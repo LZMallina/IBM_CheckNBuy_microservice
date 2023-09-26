@@ -11,3 +11,4 @@
 * 1. Deploy these applications on Code engine and obtain URL access to the API endpoints
   2. Clone anotherr repository which will use these API endpoints and deploy the front-end application through the deployment URL
  
+ Git setup
