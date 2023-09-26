@@ -23,4 +23,9 @@
  3. Deploy the Dealer Pricing Details Node.js application, which provides API endpoints that can be used to get the dealer pricing details
  $ ibmcloud ce application create --name dealerdetails --image us.icr.io/${SN_ICR_NAMESPACE}/dealerdetails --registry-secret icr-secret --port 8080 --build-context-dir dealer_details --build-source <https://github.com/ibm-developer-skills-network/dealer_evaluation_backend.git>
 
-## 
+## Modify and Deploy Frontend application
+* Update the index.html file with deployed URL for product and dealer details
+
+* deploy the frontend application by pointing the build-source to the current directory
+
+* Click the link to load homepage
