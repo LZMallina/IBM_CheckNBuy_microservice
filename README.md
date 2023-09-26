@@ -16,5 +16,11 @@
  * Set up Code Engine
 
  1. Open the Code Engine CLI
+ 2. Deploy the Product Detail python application which provides API endpoints that can be used to get product details
 
+ $ ibmcloud ce application create --name prodlist --image us.icr.io/${SN_ICR_NAMESPACE}/prodlist --registry-secret icr-secret --port 5000 --build-context-dir products_list --build-source <https://github.com/ibm-developer-skills-network/dealer_evaluation_backend.git>
 
+ 3. Deploy the Dealer Pricing Details Node.js application, which provides API endpoints that can be used to get the dealer pricing details
+ $ ibmcloud ce application create --name dealerdetails --image us.icr.io/${SN_ICR_NAMESPACE}/dealerdetails --registry-secret icr-secret --port 8080 --build-context-dir dealer_details --build-source <https://github.com/ibm-developer-skills-network/dealer_evaluation_backend.git>
+
+## 
